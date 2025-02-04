@@ -1,11 +1,11 @@
 /* ---------- variables y elementos importados ---------- */
 :root{
-    --fondo-cuerpo: rgb(212, 160, 88);
+    --fondo-cuerpo: rgb(255, 255, 255);
     --cabecera: rgb(251, 84, 4);
-    --fondo-elementos: rgb(0, 0, 0);
+    --fondo-elementos: rgb(233, 233, 233);
     --letras-texto: rgb(0, 0, 0);
     --letras-titulo: rgb(0, 0, 0);
-    --letras-especiales: rgb(0, 0, 0);
+    --letras-especiales: rgb(251, 84, 4);
 }
 
 *{
@@ -82,7 +82,7 @@ body{
 /* ---------- cuerpo ---------- */
 #sobre_mi {
     padding: 40px 20px;
-    background-color: white;
+    background-color: var(--fondo-cuerpo);
 }
 
 #sobre_mi .container {
@@ -166,7 +166,7 @@ body{
 
 /* proyectos */
 #proyectos {
-    background-color: rgb(251, 84, 4);
+    background-color: var(--cabecera);
     box-shadow: 20px 10px 30px 17px rgba(0, 0, 0, 0.8);
     width: 100%;
     min-height: 100vh;
@@ -188,7 +188,7 @@ body{
     width: 300px;
     height: auto;
     border-radius: 20px;
-    background-color: white;
+    background-color: var(--fondo-elementos);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -393,34 +393,6 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (min-width: 1201px) {
-    .header-container,
-    .footer-content {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    #cabecera {
-        padding: 40px 20px;
-    }
-
-    .header-container {
-        max-width: 90%;
-    }
-
-    #navbar ul {
-        gap: 15px;
-    }
-
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        padding: 0 20px 30px;
-    }
-}
-
 @media screen and (max-width: 767px) {
     #cabecera {
         padding: 80px 15px;

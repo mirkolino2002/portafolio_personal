@@ -16,6 +16,39 @@
 body{
     background-color: white;
 }
+#scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgb(251, 84, 4);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    opacity: 0; /* Iniciamos con opacidad 0 */
+    visibility: hidden; /* Ocultamos inicialmente */
+    display: flex; /* Cambiamos a flex permanente */
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease; /* Transición suave para todas las propiedades */
+    z-index: 1000;
+}
+
+#scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#scroll-to-top:hover {
+    background-color: white;
+    color: rgb(251, 84, 4);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
 
 /* ---------- cabecera ---------- */
 #cabecera {
@@ -429,6 +462,13 @@ footer {
     .footer-section {
         text-align: center;
     }
+    #scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -453,6 +493,13 @@ footer {
     .footer-section ul li a {
         padding: 8px 16px;
         font-size: 0.9rem;
+    }
+    #scroll-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
 }
 
@@ -499,10 +546,17 @@ footer {
         padding: 5px 10px;
         font-size: 0.85rem;
     }
+
+    #scroll-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (min-width: 912px) and (max-width: 980px) {
-    
     #cabecera {
         padding: 80px 20px;
     }
@@ -595,6 +649,13 @@ footer {
     .footer-bottom p {
         font-size: 0.9rem;
     }
+    #scroll-to-top {
+        bottom: 25px;
+        right: 25px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
 }
 
 @media screen and (min-width: 912px) and (max-width: 980px) and (orientation: landscape) {
@@ -633,5 +694,12 @@ footer {
     .proyecto img {
         width: 120px;
         height: 120px;
+    }
+    #scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
 }

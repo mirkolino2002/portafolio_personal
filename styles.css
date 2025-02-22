@@ -258,6 +258,23 @@ body{
     border-radius: 10px; 
 }
 
+.proyecto button {
+    padding: 20px 35px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.proyecto button a{
+    color: black;
+    text-decoration: none;
+
+}
+.proyecto button:hover{
+    transition: 0.4s ease-out all;
+    background-color:rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
 /* Contacto - Formulario */
 #contacto {
     padding: 60px 20px;
